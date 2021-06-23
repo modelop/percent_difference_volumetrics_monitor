@@ -1,9 +1,9 @@
 {
     "tags": [],
-    "name": "(Custom) Volumetric Monitor: Even Identifiers",
-    "description": "Model to return the number of identifiers that are even",
+    "name": "(Custom) Volumetric Monitor: Count Percent Difference",
+    "description": "Model to run a count comparison and also calculate the percent difference between a production slice and a baseline asset",
     "modelCategory": "MODEL_MONITORING_MODEL",
-    "defaultAssociationRole": "PERFORMANCE_MODEL",
+    "defaultAssociationRole": "DATA_DRIFT_MODEL",
     "frequentlyUsed": false,
     "custom" : {}
 }
