@@ -19,8 +19,8 @@ def metrics(df_1, df_2):
 
     # Add a custom test
     count_1 = df_1.shape[0]
-    count_2 = df_2.shape[1]
-    percent_difference = percent_different(count_1, count_2) * 1.0  # Force as float
+    count_2 = df_2.shape[0]
+    percent_difference = percent_different(count_1, count_2)
     percent_difference_comparison = {
         "test_category": "volumetrics",
         "test_id": "volumetrics_count_percent_difference_comparison",
@@ -55,7 +55,7 @@ def percent_different(count_1, count_2):
 if __name__ == "__main__":
     import pandas
 
-    baseline = pandas.read_json("df_sample_scored.json", lines=True)
+    baseline = pandas.read_json("df_baseline_scored.json", lines=True)
     sample = pandas.read_json("df_sample_scored.json", lines=True)
 
     from pprint import pprint
