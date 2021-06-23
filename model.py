@@ -26,7 +26,9 @@ def metrics(df_1, df_2):
         "test_id": "volumetrics_count_percent_difference_comparison",
         "test_name": "Count Percent Difference",
         "test_type": "count_comparison",
-        "percent_difference": percent_difference,
+        "values": {
+            "percent_difference": percent_difference,
+        },
     }
 
     result = {
@@ -48,6 +50,7 @@ def percent_different(count_1, count_2):
     top = abs(count_1 - count_2)
     bottom = (count_1 + count_2) / 2
     return top / bottom
+
 
 if __name__ == "__main__":
     import pandas
