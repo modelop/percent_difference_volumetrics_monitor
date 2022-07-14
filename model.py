@@ -15,7 +15,7 @@ def metrics(df_1, df_2):
     volumetric_monitor = volumetrics.VolumetricMonitor(df_1)
 
     # Run an OOTB test
-    count_comparison = volumetric_monitor.count_comparison(df_2)
+    count_comparison = volumetric_monitor.count_comparison(df_2)["volumetrics"][0]
 
     # Add a custom test
     count_1 = df_1.shape[0]
